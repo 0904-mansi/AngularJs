@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Html attribute</title>
+</head>
+<body>
+    <h1>Custom Html attribute</h1>
+    <div id="target" data-fng-app = "Test"name="Mansi">
+        <section> Section 1
+            <article>
+                Article 1
+            </article>
+        </section>
+    </div>
+    <script>
+        var ele = document.getElementById('target');
+        console.log(ele);
+        console.log(ele.getAttribute('name'))
+        console.log(ele.getAttribute('ng-app'))
+
+        var ele2 = document.querySelector("[ng-app]");
+        console.log(ele2);
+        console.log(ele2.getAttribute('ng-app'))
+
+    </script>
+</body>
+</html>
